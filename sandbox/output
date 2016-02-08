@@ -1,0 +1,6 @@
+ProfitFPTest.java:32: error: cannot find symbol
+        assertEquals(436.4, totalProfits, 0.001);
+                            ^
+  symbol:   variable totalProfits
+  location: class ProfitFPTest
+1 error
