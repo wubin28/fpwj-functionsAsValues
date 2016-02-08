@@ -49,14 +49,14 @@ public class ProfitFPTest {
                 (time) -> 5.1 + 0.15 * time;
 
         final IntToDoubleFunction profit =
-                (time) -> sales.valueAt(time) -
-                (fixedCosts.valueAt(time) +
-                        incrementalCosts.valueAt(time));
+                (time) -> sales.applyAsDouble(time) -
+                (fixedCosts.applyAsDouble(time) +
+                        incrementalCosts.applyAsDouble(time));
 
         // when
         Double totalProfits = 0.0;
         for(int time = 1; time <= 12; time ++) {
-            totalProfits += profit.valueAt(time);
+            totalProfits += profit.applyAsDouble(time);
         }
 
         // then
