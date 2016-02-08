@@ -9,11 +9,13 @@ public class MinimumLambdaExamples {
 
         IntToDoubleFunction incrementalCosts = time -> 5.1 + 0.15 * time;
 
-        Function<String, Integer> wordCount = (String s) -> s.split(" ").length;
+        Function<String, Integer> wordCount = 
+            (String s) -> s.split(" ").length;
 
-        BiFunction<String, Integer, Boolean> exceedsMaxLength = (s, maxLength) -> {
-            int actualLength = s.length();
-            return actualLength > maxLength;
+        BiFunction<String, Integer, Boolean> exceedsMaxLength = 
+            (s, maxLength) -> {
+                int actualLength = s.length();
+                return actualLength > maxLength;
         };
     }
 
