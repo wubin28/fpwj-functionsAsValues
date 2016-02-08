@@ -1,6 +1,21 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-.
-Time: 0.167
-
-OK (1 test)
-
+ProfitFPTest.java:52: error: cannot find symbol
+                (time) -> sales.valueAt(time) -
+                               ^
+  symbol:   method valueAt(int)
+  location: variable sales of type IntToDoubleFunction
+ProfitFPTest.java:53: error: cannot find symbol
+                (fixedCosts.valueAt(time) +
+                           ^
+  symbol:   method valueAt(int)
+  location: variable fixedCosts of type IntToDoubleFunction
+ProfitFPTest.java:54: error: cannot find symbol
+                        incrementalCosts.valueAt(time));
+                                        ^
+  symbol:   method valueAt(int)
+  location: variable incrementalCosts of type IntToDoubleFunction
+ProfitFPTest.java:59: error: cannot find symbol
+            totalProfits += profit.valueAt(time);
+                                  ^
+  symbol:   method valueAt(int)
+  location: variable profit of type IntToDoubleFunction
+4 errors
